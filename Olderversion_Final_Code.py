@@ -37,7 +37,7 @@ def check_website(emails, website_url, website_name, email_input_locator, submit
 
             time.sleep(4)
 
-            if website_name.lower() == 'spotify':
+            if (website_name.lower() == 'spotify' or website_name.lower() =='bbc'):
                 try:
                     error_message_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located(error_message_locator))
                     error_message = error_message_element.text
@@ -111,56 +111,8 @@ available_emails_by_website = {}
 not_available_emails_by_website = {}
 
 emails_to_check = [
-    'manojkumar.mr.cce@gmail.com',
-    'nagasharmilaperumal@gmail.com',
-    'kabilramesh@gmail.com',
-    'Akash1234@gmail.com',
-    'zblack6407@gmail.com',
-    'anaestevao@gmail.com',
-    'danielle@guthriemayes.com',
-    'camille.cotta@gmail.com',
-    'harinijampani@gmail.com',
-    'lulumalls33@gmail.com',
-    'brendaoneal@lightspeededu.com',
-    'www.ramakrishnan90948@gmail.com',
-    'srikanta_proel@yahoo.co.in',
-    'anthonygirasoli482@gmail.com',
-    'catherine@kellsgroup.com',
-    'arvindradhey79@gmail.com',
-    'cj.anderson@arrowheadglobal.com',
-    'cathyl@liderancagroup.com',
-    'andrew.myers233@gmail.com',
-    'anehorongoso@gmail.com',
-    'babasmurali@gmail.com',
-    'drfredmckinney@gmail.com',
-    'arvin.chaudhary@nadicent.com',
-    'Vishatvelvet@gmail.com',
-    'annette.stevenson@sas.com',
-    'dorothymannino@gmail.com',
-    'vikasguglani@gmail.com',
-    'brianmay06@gmail.com',
-    'cashfree2024@gmail.com',
-    'yadavyash791@gmail.com',
-    'shivfashionstudio@gmail.com',
-    'shreegaming.business@gmail.com',
-    'sukumarkarmakar455@gmail.com',
-    'amunoz@topshelffixtures.com',
-    'albertolopez9@live.com',
-    '-harshitsingh25399@gmail.com',
-    '90fpsxtreme@gmail.com',
-    'A.k.a.sh1234@gmail.com',
-    'A.k.ash1234@gmail.com',
-    'A.kash1234@gmail.com',
-    'aasa@gmail.com',
-    'adhikaryumasankar14@gmail.com',
-    'akshayasokbhai26@gmail.com',
-    'allen.gray@att.net',
-    'amygriggs@inthenewsonline.com',
-    'anaestev6863@gmail.com',
-    'anaestevao@orange.fr',
-    'anaestevao63@gmail.com',
-    'anshulanurag20@gmail.com'
-]
+    'finespeed2012@gmail.com'
+  ]
 
 for website in websites:
     available_emails = []
